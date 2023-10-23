@@ -1,0 +1,28 @@
+
+* Renderização de listas:
+- Outro recurso importante é o loop em listas;
+- Para isso vamos precisar de uma propriedade com os itens da lista;
+- E no template do componente vamos utilizar o *ngFor;
+- A sintaxe é: *ngFor="let item of items"
+- Desta maneira podemos renderizar template baseado em dados;
+
+** Importância das interfaces:
+- Toda entidade que vamos trabalhar precisa de uma interface;
+- Isso vai tornar nosso código mais simples ao longo do programa;
+- Padronizando ele e facilitando a manutenção;
+- Vamos implementar uma interface a nossa lista de animais.
+- E fazer um evento que também utilizará este recurso
+
+--> Components can be nested and used inside one another
+
+
+
+-- Command to create a component using the Angular CLI
+Rua the ng generate component <component-name> command, where
+<component-name> is the name of your new component
+
+-- spec.ts file is used to write unitary tests for testing
+the components
+
+-- We use a framework like angular in order to generate Dynamic
+content
