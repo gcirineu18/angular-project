@@ -1,0 +1,21 @@
+
+<!-- data binding (as a variable)-->
+<h2>{{hero}}</h2>
+
+
+<!-- data binding (as an object)-->
+<!-- The word uppercase in the interpolation binding 
+after the pipe | character, activates the built-in UppercasePipe-->
+
+
+<!--
+<h2>{{hero.name | uppercase}} 详情</h2>
+<div><span>ID: </span> {{hero.id}}</div>
+<div><span>Name: </span> {{hero.name}}</div>
+
+-->
+
+<div>
+<label for="name">Hero name: </label>
+<input id="name" [(ngModel)]="hero.name" placeholder="name">
+</div>
