@@ -14,4 +14,5 @@ export class HeroesComponent {
      id: 1,
     name: 'Windstorm'
   } 
+  msg : string = "Testing"
 }

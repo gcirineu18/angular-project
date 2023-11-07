@@ -18,6 +18,41 @@
                 </div>
             </div>
         </div>
+
+ <h1>动物</h1>
+<ul>
     
+    <li *ngFor="let animal of animals" >
+         Nome: {{animal.name}} - tipo: {{animal.type}}
+         <br>
+         <button (click)="showAge(animal)"> Mostrar idade</button>
+         
+    </li>
+    <h3>{{animalDetail}}</h3> 
+</ul>
+    
+<h4> 那个号是 {{number}}</h4>
+<app-change-number (changeNumber)="onChangeNumber()"></app-change-number>
+   
+<h3>{{"Einige Text hier " | uppercase}}</h3>
+<h5>{{today | date:"fullDate"}}</h5>
 </div>
 
+<p>-0-----------------------------------------------------------------------------</p>
+<div class="nosei">
+    <h2>Two way data binding</h2>
+<form action="">
+    <input type="text" [(ngModel)]="name" name="name"
+    placeholder="Tipp deine Name">
+    <input type="submit" value="Fazer Consulta" >
+    
+</form>
+
+</div>
+
+<div *ngIf="name!== ''">
+    <h4>Lo nombre és {{name}}</h4>
+</div>
+
+
+<footer>Rodapé</footer>

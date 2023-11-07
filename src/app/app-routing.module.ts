@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { CartComponent } from './page/cart/cart.component';
+import { ListRenderComponent } from './components/list-render/list-render.component';
+
 import { SaleComponent } from './pages/sale/sale.component';
 
 const routes: Routes = [
   {
     path: 'products',
-    component: HomeComponent
+    component: HomeComponent,
+    
   },
-  {
-    path: 'cart',
-    component:CartComponent
-  },
+
   {
     path: 'sale',
     component:SaleComponent

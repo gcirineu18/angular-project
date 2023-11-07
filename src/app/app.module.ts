@@ -4,22 +4,26 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { CartComponent } from './page/cart/cart.component';
+import {HttpClientModule} from '@angular/common/http'
 import { SaleComponent } from './pages/sale/sale.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { ListRenderComponent } from './components/list-render/list-render.component';
+import { ChangeNumberComponent } from './components/change-number/change-number.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CartComponent,
+    ListRenderComponent,
     SaleComponent,
-    HeroesComponent
+    HeroesComponent,
+    ChangeNumberComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
