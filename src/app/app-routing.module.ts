@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 
 import { SaleComponent } from './pages/sale/sale.component';
+import { HeroesComponent } from './heroes/heroes.component';
 
 const routes: Routes = [
   {
@@ -11,11 +12,19 @@ const routes: Routes = [
     component: HomeComponent,
     
   },
-
+    {
+      path: 'list',
+      component: ListRenderComponent
+    },
   {
     path: 'sale',
     component:SaleComponent
+  },
+  {
+    path: 'heroes',
+    component:HeroesComponent
   }
+
 ];
 
 @NgModule({

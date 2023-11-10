@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {Animal} from 'src/app/Animal'
+
+import { ListService } from 'src/app/services/list.service';
 @Component({
   selector: 'app-list-render',
   templateUrl: './list-render.component.html',
@@ -17,22 +19,23 @@ public name:string=''
   }
   /*Com a propriedade da interface é
   necessário seguir todas as variáveis
-  que se têm dclaradas */
+  que se têm declaradas */
 
 
 
   public animals: Animal[] = [
-    { name: 'Turca', type: 'Dog', age: 4 },
-    { name: 'Tom', type: 'Cat', age: 10 },
-    { name: 'Frida', type: 'Dog', age: 11 },
-    { name: 'Bob', type: 'Horse', age: 2 },
+   
   ];
 
   today = new Date();
 
   animalDetail ='';
   number = 0;
-  constructor() {}
+
+  constructor(private listService: ListService) 
+{
+  this.getAnimals();
+}
 
 
   showAge(animal:Animal){
@@ -43,5 +46,21 @@ public name:string=''
     this.number = Math.floor(Math.random()* 10);
   }
 
+
+  removeAnimal(animal:Animal){
+    console.warn("Removendo animal");
+    this.animals = this.listService.remove(this.animals, animal);
+  }
+
+  doubleAge(animal:Animal){  
+    console.warn("Duplicando a idade");
+    this.animals = this.listService.duplica(this.animals,animal);
+  }
+
+  getAnimals():void{
+    this.listService.getAll().subscribe((animals)=>
+    (this.animals = animals)
+    );
+  }
  
 }

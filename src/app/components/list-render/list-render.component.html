@@ -26,7 +26,10 @@
          Nome: {{animal.name}} - tipo: {{animal.type}}
          <br>
          <button (click)="showAge(animal)"> Mostrar idade</button>
-         
+         <br>
+         <button (click)="doubleAge(animal)">Duplicar a idade> </button>
+        <button (click)="removeAnimal(animal)">Excluir</button>
+        
     </li>
     <h3>{{animalDetail}}</h3> 
 </ul>
@@ -55,4 +58,5 @@
 </div>
 
 
+<br><br>
 <footer>Rodapé</footer>

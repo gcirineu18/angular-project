@@ -143,3 +143,25 @@ preenchimento de inputs;
 
 - E também declarar o ngModel no input, além de preencher também o 
 atributo name, todos com o mesmo valor
+
+** Services:
+- O service é outra parte fundamental da arquitetura do Angular;
+- Geralmente ficam as requisições para as APIs que utilizamos no projeto;
+- Precisamos criar o service com: ng generate service <nome>
+- importar no componente e iniciar no construtor;
+- Depois, é possível acessar os métodos dele;
+
+
+** Angular Router:
+- Criar um novo arquivo para declarar nossas rotas;
+- Nele vamos importar os módulos RouterModule e Routes;
+- Após a definição estas rotas precisam ser importadas em app.module.ts;
+- E por fim no template principal criamos as rotas;
+- E substituímos os componentes por: <router-outlet>
+
+** Requisições HTTP:
+- Realizar requisições HTTP nos services;
+- Precisamos importar dois pacotes: HttpClient e HttpHeaders;
+- Neste exemplo utilizaremos uma API local para simular as requests com o 
+json-server
+- Por último, é necessário incializar o módulo HttpClientModule em app.module.ts;
