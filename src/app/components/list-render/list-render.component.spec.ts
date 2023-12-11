@@ -3,21 +3,22 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ListRenderComponent } from './list-render.component';
 
 describe('ListRenderComponent', () => {
-  let component: ListRenderComponent;
-  let fixture: ComponentFixture<ListRenderComponent>;
+ let component: ListRenderComponent;
+ let fixture: ComponentFixture<ListRenderComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ ListRenderComponent ]
-    })
-    .compileComponents();
+ beforeEach(async () => {
+   await TestBed.configureTestingModule({
+     declarations: [ ListRenderComponent ],
+  
+   })
+   .compileComponents();
 
-    fixture = TestBed.createComponent(ListRenderComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+   fixture = TestBed.createComponent(ListRenderComponent);
+   component = fixture.componentInstance;
+   fixture.detectChanges();
+ });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+ it('should create', () => {
+   expect(component).toBeTruthy();
+ });
 });

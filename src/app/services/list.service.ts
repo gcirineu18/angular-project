@@ -11,16 +11,14 @@ export class ListService {
   
   constructor(private http:HttpClient,) { }
 
-  
-  
-  
+
   
   remove(animals: Animal[], animal:Animal){
 
     console.log('Ativando o service');
     
     return animals.filter((a)=> animal.name !== a.name)
-  }
+  } 
 
   duplica(animals:Animal[], animal: Animal){
 

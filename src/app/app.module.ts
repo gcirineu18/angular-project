@@ -9,6 +9,7 @@ import { SaleComponent } from './pages/sale/sale.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
+import { MatchersJestComponent } from './matchers-jest/matchers-jest.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
     ListRenderComponent,
     SaleComponent,
     HeroesComponent,
-    ChangeNumberComponent
+    ChangeNumberComponent,
+    MatchersJestComponent
   ],
   imports: [
     BrowserModule,

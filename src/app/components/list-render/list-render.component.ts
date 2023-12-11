@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import {Animal} from 'src/app/Animal'
 
-import { ListService } from 'src/app/services/list.service';
+//import { ListService } from 'src/app/services/list.service';
 @Component({
   selector: 'app-list-render',
   templateUrl: './list-render.component.html',
   styleUrls: ['./list-render.component.scss']
 })
 export class ListRenderComponent {
-  
+  /*
 public name:string=''
   
   setName(name:string){
@@ -17,10 +17,9 @@ public name:string=''
   getName(){
     return this.name
   }
-  /*Com a propriedade da interface é
-  necessário seguir todas as variáveis
-  que se têm declaradas */
-
+  // Com a propriedade da interface é
+ // necessário seguir todas as variáveis
+ // que se têm declaradas 
 
 
   public animals: Animal[] = [
@@ -62,5 +61,5 @@ public name:string=''
     (this.animals = animals)
     );
   }
- 
+ */
 }
