@@ -45,7 +45,7 @@ export class FalschService {
     const url = 'https://jsonplaceholder.typicode.com/todos/1';
 
     const httpOptions = {
-      Headers: new HttpHeaders({'Content-Type': 'application/json'})
+      headers: new HttpHeaders({'Content-Type': 'application/json'})
     }
 
     return this.http.post(data,url,httpOptions);

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Animal} from 'src/app/Animal'
+import { ListService } from 'src/app/services/list.service';
 
 //import { ListService } from 'src/app/services/list.service';
 @Component({
@@ -8,7 +9,7 @@ import {Animal} from 'src/app/Animal'
   styleUrls: ['./list-render.component.scss']
 })
 export class ListRenderComponent {
-  /*
+  
 public name:string=''
   
   setName(name:string){
@@ -61,5 +62,5 @@ public name:string=''
     (this.animals = animals)
     );
   }
- */
+ 
 }

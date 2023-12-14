@@ -5,6 +5,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 
 import { SaleComponent } from './pages/sale/sale.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 const routes: Routes = [
   {
@@ -23,8 +24,11 @@ const routes: Routes = [
   {
     path: 'heroes',
     component:HeroesComponent
+  },
+  {
+    path: 'list/:id',
+    component:ItemDetailComponent
   }
-
 ];
 
 @NgModule({

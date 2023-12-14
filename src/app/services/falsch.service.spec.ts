@@ -1,8 +1,9 @@
 import { HttpErrorResponse } from '@angular/common/http';
 
 
-import { of,throwError } from 'rxjs/internal/observable/of';
+import { of } from 'rxjs/internal/observable/of';
 import { FalschService } from './falsch.service';
+import { throwError } from 'rxjs';
 
 describe('FalschService', () => {
   let service: FalschService;

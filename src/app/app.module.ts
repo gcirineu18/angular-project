@@ -10,6 +10,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
 import { MatchersJestComponent } from './matchers-jest/matchers-jest.component';
+import { DataComponent } from './data/data.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { MatchersJestComponent } from './matchers-jest/matchers-jest.component';
     SaleComponent,
     HeroesComponent,
     ChangeNumberComponent,
-    MatchersJestComponent
+    MatchersJestComponent,
+    DataComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
