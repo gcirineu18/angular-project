@@ -24,7 +24,7 @@ export class ListService {
 
     return animals.map((a)=> {
       if(a ===animal){ 
-        return{name: a.name, type: a.type, age: 2*a.age  } 
+        return{id:a.id,name: a.name, type: a.type, age: 2*a.age  } 
       }
       else return a;
     }
@@ -34,6 +34,11 @@ export class ListService {
   getAll(): Observable<Animal[]>{
 
      return this.http.get<Animal[]>(this.apiUrl)
+  }
+  
+  getItem(id:number):Observable<Animal>{
+
+    return this.http.get<Animal>(`${this.apiUrl}/${id}`)
   }
 
 }

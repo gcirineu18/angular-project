@@ -23,7 +23,7 @@
 <ul>
     
     <li *ngFor="let animal of animals" >
-         Nome: {{animal.name}} - tipo: {{animal.type}}
+         Nome: <a routerLink="/list/{{animal.id}}"> {{animal.name}} </a>- tipo: {{animal.type}}
          <br>
          <button (click)="showAge(animal)"> Mostrar idade</button>
          <br>
@@ -41,7 +41,7 @@
 <h5>{{today | date:"fullDate"}}</h5>
 </div>
 
-<p>-0-----------------------------------------------------------------------------</p>
+<p>---------------------------------------------------------------------------------------------</p>
 <div class="nosei">
     <h2>Two way data binding</h2>
 <form action="">
